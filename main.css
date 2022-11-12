@@ -1,0 +1,86 @@
+/* font, [thin 100, thin 100 italic] */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap");
+
+body {
+  min-height: 100vh;
+
+  background-image: url("./bg.webp");
+  background-repeat: no-repeat;
+  /* repeat y = column, repeat x = row */
+  background-size: cover;
+
+  /* font family */
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 42rem;
+}
+
+.water {
+  /* hex color and rgba are the preferred [types] color of the designer */
+  background-color: rgb(207, 245, 231);
+  color: #0d4c92;
+}
+
+.anotherWater {
+  background-color: #59c1bd;
+  color: #a0e4cb;
+}
+
+/* bad code */
+#unique {
+  color: black;
+}
+
+/* box model sample */
+.box {
+  display: inline-block;
+  width: 100%;
+  background-color: aquamarine;
+
+  margin-bottom: 1rem;
+}
+
+.box--content {
+  margin: 10px 20px 30px 40px;
+  padding: 40px 20px 30px 40px;
+  background-color: #59c1bd;
+
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5rem;
+
+  /* box shadow sample*/
+  box-shadow: 0 25px 50px 12px rgb(0 0 0 / 0.5);
+
+  /* font size sample*/
+  font-size: 2rem;
+  font-weight: thin;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  text-align: center;
+  letter-spacing: -0.05em;
+}
+
+.overflow {
+  height: 5rem;
+  background-color: rgb(207, 245, 231);
+
+  overflow-y: scroll;
+
+  /*  */
+  text-indent: 2rem;
+}
+
+.overflow--content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem 0;
+
+  /* word spacing */
+  word-spacing: 0.025em;
+}
